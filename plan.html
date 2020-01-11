@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <link rel="shortcut icon" type="image/x-icon" href="css/img/logo.png" />
+      <title>Workout Planner - Plan</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="css/mdb.min.css" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+      <link href="css/style.css" rel="stylesheet">
+
+      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+   </head>
+   <body>
+      <!-- Start your project here-->
+      <div class="page-container">
+         <nav>
+            <div class="navbar-content">
+               <i style="
+    margin-left: 1%;
+    font-size: 25px;
+" class="fas fa-dumbbell"></i>
+               <div class="navbar-menu">
+                  <ul class="navbar-list">
+                     <li class="navbar-item Home" onclick="window.open('index.html')"> Home </li>
+                     <li class="navbar-item Plan PlanBtn"> Plan </li>
+                     <li class="navbar-item Contact" onclick="window.open('contact.html')"> Contact </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="spacer">
+            &nbsp;
+         </div>
+         <div class="content-wrapper P2">
+            <div class="todayIs">
+               <h2> Today's date is : </h2>
+               &nbsp;
+               <h2 class="DATE"> ? </h2>
+            </div>
+            <div class="plan-content">
+               <div class="plan-list">
+                  <section style="
+                     width: 100%;
+                     position: absolute;
+                     top: 5vh;
+                     text-align: center;
+                     background-color: rgba(148, 144, 144, 0.13);
+                     "> Today's List </section>
+                  <section class="timer" style="
+                     position: absolute;
+                     width: 100%;
+                     text-align: center;
+                     top: 8vh;
+                     background-color: #192a56ab;
+                     ">
+                     <h2 class="workoutEstimate"> You'll spend <span><h2 class="timing"> ? </h2></span> hours in the gym.</h2>
+                  </section>
+                  <ul class="actual-list">
+                     <li> You currently have no activity added !</li>
+                     <li> Tap the Button below to add one !</li>
+                  </ul>
+                  <section style="
+                     justify-content: center;
+                     width: 100%;
+                     position: absolute;
+                     bottom: 7.5vh;
+                     display: flex;
+                     ">
+                     <button class="btn actShow" data-toggle="modal" data-target="#actModal">
+                        Add Activity
+                        <div class="ripple-container"></div>
+                     </button>
+                  </section>
+                  <!-- Modal Core -->
+                  <div class="modal fade" id="actModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                        <div style="
+                           background-color: #191f2f;
+                           " class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="myModalLabel">Choose your exercises !</h4>
+                           </div>
+                           <div class="modal-body">
+                              <div class="modal-list">
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes" data-value='{"name": "Cardio", "duration": 35}'>
+                                    Cardio 
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes" data-value='{"name": "Biceps Curls", "duration":8}'>
+                                    Biceps Curls
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes" data-value='{"name": "Chest Bench", "duration":8}'>
+                                    Chest Bench
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes" data-value='{"name": "Push-Ups", "duration":10}'>
+                                    Push-Ups
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes" data-value='{"name": "Squats", "duration":8}'>
+                                    Squats
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="modal-list">
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="modal-list">
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                                 <div class="checkbox">
+                                    <label>
+                                    <input type="checkbox" name="optionsCheckboxes">
+                                    To be Added ...
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-info btn-simple addActivity">Add to list</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="actual-info">
+                <div class="info-header">
+                  <h1> Pick up your training modules from the list to display the info ! </h1>
+                </div>
+                <div class="info-text">
+                  <div id="info-text-container">
+
+                  <p id="info1">
+                  Choose activities from the modal window and start your training !
+                  </p>
+
+                  <br><br>
+
+                  <div class="infoImg">
+                  <img id="info2" src="css/img/jumboPic.jpg">
+               </div>
+                  
+                  </img>
+
+                  <br><br>
+
+                  <p style="text-align: center;" id="info12">
+                     Stay hydrated ! :)
+                  </p>
+
+                  <br><br>
+
+                  <div class="infoImg">
+                  <iframe class="video" style="border: 0" id="info3" src="https://www.youtube.com/embed/yTL_bNvXJ9s">
+                  </iframe>
+               </div>
+
+               <br><br><br><br>
+
+                </div>
+                </div>
+               </div>
+
+            </div>
+         </div>
+         <!--End of page content -->
+         <footer>
+            <div class="footer-content">
+               <h1 class="footer-text"> Razvan Berbece &copy; 2019 </h1>
+            </div>
+         </footer>
+      </div>
+      <!-- /Start your project here-->
+    
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/exerciseScript.js"></script>
+      <script type="text/javascript" src="js/info.js"></script>
+   </body>
+</html>

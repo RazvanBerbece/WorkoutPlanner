@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <link rel="shortcut icon" type="image/x-icon" href="css/img/logo.png" />
+      <title>Workout Planner - Contact</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="css/mdb.min.css" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+      <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Start your project here-->
+      <div class="page-container">
+
+        <nav>
+            <div class="navbar-content">
+              <i style="
+    margin-left: 1%;
+    font-size: 25px;
+" class="fas fa-dumbbell"></i>
+                <div class="navbar-menu">
+                    <ul class="navbar-list">
+                        <li class="navbar-item Home" onclick="window.open('index.html')"> Home </li>
+                        <li class="navbar-item Plan PlanBtn" onclick="window.open('plan.html')"> Plan </li>
+                        <li class="navbar-item Contact"> Contact </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+
+        <div style="background-color: #393e44" class="content-wrapper P1">
+            
+            <div class="formContainer">
+              <div class="_form">
+              <form action="contact.php" method="POST">
+
+                <div class="contact_header">
+                <h1 style="color: white;">Send me a review !</h1>
+              </div>
+
+                <input class="contactField" type="text" name="fname" placeholder="Your first name here">
+                <br><br>
+                <input class="contactField" type="text" name="lname" placeholder="Your last name here">
+                <br><br>
+                <input class="contactField" type="text" name="email" placeholder="Your email here">
+                <br><br>
+                <textarea class="contact_message" placeholder="Your message here"></textarea>
+                <br><br>
+
+                <div class="contact_submit">
+                <input style="
+    height: 6vh;
+    width: 130px;
+    box-shadow: 4px 3px 7px 0px rgba(70, 66, 66, 0.79);
+" type="submit" name="Submit">
+              </div>
+
+              </form>
+            </div>
+
+            </div>
+
+        </div>
+        <!--End of page content -->
+
+
+
+        <footer> 
+            <div class="footer-content">
+                <h1 class="footer-text"> Razvan Berbece &copy; 2019 </h1>
+            </div>
+        </footer>
+
+      </div>
+      <!-- /Start your project here-->
+
+      <!-- SCRIPTS -->
+
+      <!-- JQuery -->
+      <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
+   </body>
+</html>

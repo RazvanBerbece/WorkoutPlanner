@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+     font-family: 'Karla', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+ body {
+     line-height: 1;
+}
+ ol, ul {
+     list-style: none;
+}
+ blockquote, q {
+     quotes: none;
+}
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: '';
+     content: none;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+body {
+  /* For Opera and <= IE9, we need to add unselectable="on" attribute onto each element */
+    /* Check this site for more details: http://help.dottoro.com/lhwdpnva.php */
+    -moz-user-select: none; /* These user-select properties are inheritable, used to prevent text selection */
+    -webkit-user-select: none;
+    -ms-user-select: none; /* From IE10 only */
+    user-select: none; /* Not valid CSS yet, as of July 2012 */
+
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    user-drag: none;
+}
+ .page-container {
+     min-height: 100vh;
+     position: relative;
+}
+ .content-wrapper {
+     width: 100%;
+     padding-bottom: 5vh;
+}
+ footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 7vh;
+     background-color: #1e272e;
+     color: white;
+}
+ .footer-content {
+     display: flex;
+     width: inherit;
+     align-items: center;
+     justify-content: center;
+     height: inherit;
+}
+ nav {
+     position: absolute;
+     width: 100%;
+     top: 0;
+     height: 8.5vh;
+     background-color: #1e272e;
+     color: white;
+}
+ .spacer {
+     width: 100%;
+     height: 8.5vh;
+}
+ .navbar-content {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     height: inherit;
+     align-items: center;
+}
+ .navbar-list {
+     list-style-type: none;
+     display: inline-block;
+}
+ .navbar-item {
+     padding-right: 25px;
+     float: left;
+     cursor: pointer;
+}
+ .navbar-item:hover {
+     color: #7f8fa6;
+}
+ .navbar-title {
+     margin-left: 0;
+}
+ .jumbotron-image {
+     display: grid;
+     grid-template-columns: 25vw 25vw 25vw 25vw;
+     grid-template-rows: 10vh 10vh 10vh 10vh;
+}
+ .jumboPic {
+     background: url('img/jbBlack.jpg');
+     background-repeat: round;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     grid-row: 1 / span 4;
+     grid-column: 1 / span 4;
+     max-height: 50vh;
+}
+ .main-container {
+     display: flex;
+     height: 44.5vh;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     background-color: #393e44;
+    ;
+     color: white;
+}
+ .main-text-container {
+}
+ .main-text {
+     text-align: center;
+}
+ .btn-info {
+     background-color: #484648!important;
+     color: #fff!important;
+     transition: font-size 1s;
+}
+ .btn-info:hover {
+     font-size: 1em;
+     box-shadow: 6px 5px 12px 4px rgba(37, 36, 36, 0.92);
+}
+ .btn-info:hover {
+}
+ .todayIs {
+     width: 100%;
+     height: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     background-color: #192a56;
+}
+ .plan-content {
+     width: 100%;
+     display: grid;
+     grid-template-columns: 15vw 15vw 22vw 22vw 22vw;
+     grid-template-rows: 25vh 25vh 25vh 25vh;
+}
+ .plan-list {
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 1px solid #4a434387;
+     grid-row: 1 / span 4;
+     grid-column: 1 / span 2;
+     position: relative;
+}
+ .actual-info {
+     grid-row: 1 / span 4;
+     grid-column: 3 / span 5;
+     color: white;
+}
+ .P2 {
+     background-color: #353b48;
+}
+ .addActivity {
+     background-color: rgba(34, 47, 82, 0.33) !important;
+}
+ .actShow{
+     background-color: rgba(34, 47, 82, 0.33) !important;
+}
+ .actual-list {
+         width: 100%;
+    text-align: center;
+}
+ .modal-body {
+     display: flex;
+     justify-content: space-evenly;
+}
+ .modal-list {
+     flex-wrap: wrap;
+     display: flex;
+     height: 35vh;
+     width: 33%;
+}
+ .trainingItem {
+     margin-bottom: 1.5vh;
+     cursor: pointer;
+}
+.trainingItem:hover {
+	font-weight: 600;
+	box-shadow: 6px 5px 12px 4px rgba(37, 36, 36, 0.92);
+}
+ .actual-info {
+     display: grid;
+     grid-row: 1 / span 4;
+     grid-column: 3 / span 5;
+     color: white;
+     grid-auto-rows: 25vh 25vh 25vh 25vh;
+     grid-auto-columns: 23vw 23vw 22.5vw;
+}
+ .info-header {
+     justify-content: center;
+     align-items: center;
+     grid-column: 1 / span 3;
+     display: flex;
+     width: 100%;
+     font-size: 1.66em;
+}
+ .info-text {
+     grid-row: 2 / span 3;
+     width: 100%;
+     overflow: auto;
+     grid-column: 1 / span 3;
+}
+ .info-text::-webkit-scrollbar {
+     width: 0.5em;
+     height: 0.5em;
+}
+ .info-text::-webkit-scrollbar-thumb {
+     background-color: rgb(218, 218, 218);
+     border-radius: 100px;
+}
+ .info-text::hover {
+     background: rgb(189, 189, 189);
+}
+
+.infoImg {
+     display: flex;
+    width: 100%;
+    height: 45vh;
+    justify-content: center;
+}
+
+#info2 {
+         width: 75%;
+    height: inherit;
+   border-radius: 85px;
+    box-shadow: 4px 4px 7px 4px rgba(160, 153, 153, 0.4);
+}
+
+.info-text-container {
+     width: 100%;
+}
+
+#info1 {
+     text-align: center;
+}
+
+.video {
+     width: 50%;
+     height: inherit;
+     border: 0;
+}
+
+.formContainer {
+         height: 85vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+}
+
+._form {
+        border-radius: 31px;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5d5c5c;
+    background-color: rgb(87, 92, 99);
+    box-shadow: 4px 3px 10px 0px rgba(152, 151, 151, 0.62);
+}
+
+.contactField {
+     width: 350px;
+    text-align: center;
+}
+
+.contact_message {
+     width: 350px;
+    height: 255px;
+    resize: none;
+    text-align: center;
+}
+
+.contact_header {
+         width: 100%;
+    text-align: center;
+    margin-bottom: 8%;
+    font-size: 2em;
+}
+
+.contact_submit {
+     width: 100%;
+    text-align: center;
+}
+
+ @media (max-width: 770px) and (orientation: landscape) {
+     .main-text{
+         font-size: 15px;
+    }
+    .timer {
+         top: 10vh !important;
+    }
+}
+ @media (max-width: 770px) and (orientation: portrait) {
+     .main-text{
+         font-size: 15px;
+    }
+    #info2 {
+     height: 60% !important;
+    }
+}
+ @media (min-width: 2560px) and (max-width: 5120px) {
+     body {
+         font-size: 33px !important;
+    }
+}
